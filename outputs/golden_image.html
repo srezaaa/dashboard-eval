@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Golden Image Dashboard</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <style>
+            body { font-family: 'Open Sans', sans-serif; margin:40px; }
+            .chart { width: 100%; max-width: 900px; margin: auto; }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align:center;"><b>Company Sales Dashboard – 2024</b></h1>
+        <div class="chart" id="fig1"></div>
+        <div class="chart" id="fig2"></div>
+        <script>
+            // This is placeholder chart code
+            var fig1 = {
+                data: [{x: [1, 2, 3], y: [100, 200, 150], type: 'scatter', name: 'Region A'}],
+                layout: {title: 'Monthly Revenue by Region'}
+            };
+            var fig2 = {
+                data: [{x: [120, 115, 140], y: ["S001", "S002", "S003"], type: 'bar', orientation: 'h'}],
+                layout: {title: 'Top-10 Stores'}
+            };
+            Plotly.newPlot('fig1', fig1.data, fig1.layout);
+            Plotly.newPlot('fig2', fig2.data, fig2.layout);
+        </script>
+    </body>
+</html>
