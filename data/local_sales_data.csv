@@ -1,0 +1,10 @@
+date,store_id,city,region,product_line,revenue_kUSD,units_sold
+2024-01-01,S001,Toronto,North,A,125.36,12
+2024-01-02,S001,Toronto,North,A,112.72,11
+2024-01-03,S001,Toronto,North,A,126.95,12
+2024-01-01,S002,Ottawa,North,B,118.22,10
+2024-01-02,S002,Ottawa,North,C,134.56,13
+2024-01-03,S002,Ottawa,North,B,121.11,11
+2024-01-01,S003,Montreal,North,A,110.45,10
+2024-01-02,S003,Montreal,North,C,132.88,13
+2024-01-03,S003,Montreal,North,B,119.33,11
