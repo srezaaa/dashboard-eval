@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sunburst Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; }
+      .chart { width: 100%; max-width: 900px; margin: auto; }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;"><b>Business Category Sunburst</b></h1>
+    <div class="chart" id="sunburst"></div>
+    <script>
+      var data = [{
+        type: "sunburst",
+        labels: ["North America", "Electronics", "Phones", "Computers", "Europe", "Clothing", "Men", "Asia", "Home", "Kitchen"],
+        parents: ["", "North America", "Electronics", "Electronics", "", "Europe", "Clothing", "", "Asia", "Home"],
+        values: [0, 0, 520, 610, 0, 0, 330, 0, 0, 450],
+        branchvalues: "total"
+      }];
+      var layout = {
+        margin: { t: 40, l: 0, r: 0, b: 0 }
+      };
+      Plotly.newPlot('sunburst', data, layout);
+    </script>
+  </body>
+</html>
